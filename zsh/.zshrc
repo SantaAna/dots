@@ -4,17 +4,26 @@ export PATH=/Users/patrickstruthers/.mix/escripts:$PATH
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/Users/patrickstruthers/.local/share/elixir-ls:$PATH"
 export PATH="/Users/patrickstruthers/Library/Python/3.9/bin:$PATH"
-export SWSD_KEY="cGF0cmljay5zdHJ1dGhlcnNAZGlnaXJhZC5jb20=:eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyX2lkIjo0Njk0MTE1LCJnZW5lcmF0ZWRfYXQiOiIyMDIyLTExLTIxIDIzOjI5OjU5In0.VWUDsvpL8pNuMD-VJVIRRqsn104zZnTAuTr94TXh1mKgIgCS6RfBtHwh5DCmKWvpuvCh2le6tZllWO2zfKN74w:VVM="
+export PATH="/home/patrick/.local/lib/python3.10/site-packages:$PATH"
+export PATH="/home/patrick/.asdf/installs/elixir/1.14.4-otp-25/.mix/escripts:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
+export ELIXIR_ERL_OPTIONS="+sssdio 128"
+export XLA_TARGET="cuda114"
 export LC_ALL="en_US.UTF-8"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export FZF_BASE="/opt/homebrew/bin/fzf"
-
+export FLYCTL_INSTALL="/home/patrick/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export PATH="/home/patrick/.cargo/bin:$PATH"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="bira"
+
+export EDITOR='/usr/bin/nvim'
+export VISUAL='/usr/bin/nvim'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -105,3 +114,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# opam configuration
+[[ ! -r /home/patrick/.opam/opam-init/init.zsh ]] || source /home/patrick/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
