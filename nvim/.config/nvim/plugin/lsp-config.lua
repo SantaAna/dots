@@ -61,6 +61,11 @@ require 'lspconfig'.lua_ls.setup {
 
 require 'lspconfig'.racket_langserver.setup {}
 
+require'lspconfig'.ocamllsp.setup{
+    capabilities = capabilities,
+    on_attach = on_attach
+}
+
 require 'lspconfig'.gopls.setup {}
 
 require 'lspconfig'.rust_analyzer.setup {}
