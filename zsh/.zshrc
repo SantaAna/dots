@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/Users/patrickstruthers/.mix/escripts:$PATH
@@ -20,7 +27,7 @@ export PATH="/home/patrick/.cargo/bin:$PATH"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="bira"
+# ZSH_THEME="bira"
 
 export EDITOR='/usr/bin/nvim'
 export VISUAL='/usr/bin/nvim'
@@ -85,10 +92,23 @@ export VISUAL='/usr/bin/nvim'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf zsh-autosuggestions asdf)
+#plugins=(git fzf zsh-autosuggestions asdf vi-mode)
  
 source $ZSH/oh-my-zsh.sh
 
+#plugin configur using zplug
+#documentation: https://github.com/zplug/zplug
+source ~/.zplug/init.zsh
+
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/fzf", from:oh-my-zsh
+zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
+zplug "plugins/asdf", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "jeffreytse/zsh-vi-mode"
+zplug romkatv/powerlevel10k, as:theme, depth:1
+
+zplug load --verbose
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -117,3 +137,6 @@ source $ZSH/oh-my-zsh.sh
 
 # opam configuration
 [[ ! -r /home/patrick/.opam/opam-init/init.zsh ]] || source /home/patrick/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
