@@ -32,6 +32,10 @@ export PATH="/home/patrick/.cargo/bin:$PATH"
 export EDITOR='/usr/bin/nvim'
 export VISUAL='/usr/bin/nvim'
 
+#aliases
+
+alias cpbooks="~/scripts/copy_books"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -108,7 +112,7 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "jeffreytse/zsh-vi-mode"
 zplug romkatv/powerlevel10k, as:theme, depth:1
 
-zplug load --verbose
+zplug load
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
