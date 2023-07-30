@@ -11,8 +11,9 @@ vim.opt.shiftwidth = 4
 vim.opt.swapfile = false
 
 -- Load plugins
+require("mason").setup()
+require("mason-lspconfig").setup()
 require('plugins')
-require("nvim-lsp-installer").setup {}
 
 -- Key mappings
 local keymap = vim.api.nvim_set_keymap

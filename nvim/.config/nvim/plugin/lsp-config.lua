@@ -71,9 +71,10 @@ require 'lspconfig'.gopls.setup {}
 require 'lspconfig'.rust_analyzer.setup {}
 
 require 'lspconfig'.elixirls.setup {
-    capabilities = capabilities,
-    on_attach = on_attach
+    on_attach = on_attach,
+    capabilities = capabilities
 }
+
 require 'lspconfig'.powershell_es.setup {
     on_attach = on_attach
 }
@@ -89,7 +90,7 @@ require 'lspconfig'.svelte.setup {
 require 'lspconfig'.pyright.setup {
     on_attach = on_attach
 }
-require 'lspconfig'.emmet_ls.setup {
+require 'lspconfig'.emmet_language_server.setup {
     filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', "eelixir", "heex",
         "elixir" }
 }
