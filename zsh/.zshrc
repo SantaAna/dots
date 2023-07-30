@@ -36,6 +36,12 @@ export VISUAL='/usr/bin/nvim'
 
 alias cpbooks="~/scripts/copy_books"
 
+#rebinds control key on laptop
+
+if [ "$(hostname)" = "pop-laptop" ]; then
+    setxkbmap -option ctrl:swapcaps
+fi
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -112,7 +118,7 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "jeffreytse/zsh-vi-mode"
 zplug romkatv/powerlevel10k, as:theme, depth:1
 
-zplug load
+zplug load 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -144,3 +150,7 @@ zplug load
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
