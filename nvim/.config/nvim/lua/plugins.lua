@@ -1,9 +1,10 @@
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'Mofiqul/dracula.nvim'
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
 	use 'neovim/nvim-lspconfig'
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-	use "williamboman/nvim-lsp-installer"
 --	use({ "L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*" })
     use 'onsails/lspkind-nvim'
 	use 'hrsh7th/cmp-nvim-lsp'
