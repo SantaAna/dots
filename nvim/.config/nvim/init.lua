@@ -18,8 +18,10 @@ require('plugins')
 -- Key mappings
 local keymap = vim.api.nvim_set_keymap
 local nore = { noremap = true }
+
 -- VIM mappings
 keymap('i', '<C-e>', '<ESC>', nore)
+keymap('i', 'jj', '<ESC>', nore)
 keymap('n', '<C-l>', '<C-w>l', nore)
 keymap('n', '<C-h>', '<C-w>h', nore)
 keymap('n', '<C-q>', '<C-w>q', nore)

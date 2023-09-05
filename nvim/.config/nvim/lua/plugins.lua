@@ -15,8 +15,6 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
 	use 'rafamadriz/friendly-snippets'
-	use 'nvim-tree/nvim-web-devicons'
-	use 'nvim-tree/nvim-tree.lua'
 	use 'easymotion/vim-easymotion'
 	use 'nvim-lua/plenary.nvim'
 	use 'BurntSushi/ripgrep'
@@ -29,10 +27,14 @@ return require('packer').startup(function(use)
 	use 'jose-elias-alvarez/null-ls.nvim'
 	use "windwp/nvim-autopairs"
     use "mbbill/undotree"
+    use 'nvim-tree/nvim-web-devicons'
     use "tpope/vim-commentary"
     use "tpope/vim-surround"
     use "romgrk/barbar.nvim"
     use "vimwiki/vimwiki"
     use "christoomey/vim-tmux-navigator"
     use "xiyaowong/transparent.nvim"
+    use "camgraff/telescope-tmux.nvim"
+    use "kevinhwang91/rnvimr"
+    use "tpope/vim-projectionist"
 end)

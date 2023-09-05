@@ -59,43 +59,15 @@ require 'lspconfig'.lua_ls.setup {
     },
 }
 
-require 'lspconfig'.racket_langserver.setup {}
-
-require'lspconfig'.ocamllsp.setup{
-    capabilities = capabilities,
-    on_attach = on_attach
-}
-
-require 'lspconfig'.gopls.setup {}
-
-require 'lspconfig'.rust_analyzer.setup {}
-
 require 'lspconfig'.elixirls.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
 
-require 'lspconfig'.powershell_es.setup {
-    on_attach = on_attach
-}
-require 'lspconfig'.tsserver.setup {
-    on_attach = on_attach
-}
-require 'lspconfig'.fsautocomplete.setup {
-    on_attach = on_attach
-}
-require 'lspconfig'.svelte.setup {
-    on_attach = on_attach
-}
-require 'lspconfig'.pyright.setup {
-    on_attach = on_attach
-}
-require 'lspconfig'.emmet_language_server.setup {
-    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', "eelixir", "heex",
-        "elixir" }
+require 'lspconfig'.emmet_ls.setup {
+    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', "eelixir", "heex"}
 }
 
-require 'lspconfig'.prismals.setup {}
 
 require 'lspconfig'.tailwindcss.setup {
   -- filetypes = { "html", "elixir", "eelixir", "heex" },
@@ -107,23 +79,3 @@ require 'lspconfig'.tailwindcss.setup {
     },
   },
 }
--- require 'lspconfig'.setup({
---   capabilities = capabilities,
---   filetypes = { "html", "elixir", "eelixir", "heex" },
---   init_options = {
---     userLanguages = {
---       elixir = "html-eex",
---       eelixir = "html-eex",
---       heex = "html-eex",
---     },
---   },
---   settings = {
---     tailwindCSS = {
---       experimental = {
---         classRegex = {
---           'class[:]\\s*"([^"]*)"',
---         },
---       },
---     },
---   },
--- })
