@@ -30,8 +30,8 @@ export PATH="/home/patrick/.cargo/bin:$PATH"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="bira"
 
-export EDITOR='~/.nix-profile/bin/nvim'
-export VISUAL='~/.nix-profile/bin/nvim'
+export EDITOR='/opt/homebrew/bin/nvim'
+export VISUAL='/opt/homebrew/bin/nvim'
 
 #aliases
 
@@ -150,7 +150,6 @@ zplug load
 
 # opam configuration
 [[ ! -r /Users/patrickstruthers/.opam/opam-init/init.zsh ]] || source /Users/patrickstruthers/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-=======
 # opam configuration
 [[ ! -r /home/patrick/.opam/opam-init/init.zsh ]] || source /home/patrick/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
