@@ -649,8 +649,8 @@ colors: *Dracula
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 #shell:
-#  program: /bin/bash
-#  args:
+#  program: usr/bin/zsh
+#args:
 #    - --login
 
 # Startup directory
@@ -870,4 +870,6 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
+  - { key: Equals, mods: Control, action: IncreaseFontSize}
+  - { key: Minus, mods: Control, action: DecreaseFontSize}
 
