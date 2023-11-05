@@ -77,6 +77,11 @@ require('lspconfig')['elixirls'].setup {
     capabilities = capabilities
 }
 
+-- Marksman capability load
+require('lspconfig')['marksman'].setup {
+    capabilities = capabilities
+}
+
 -- Lua capability load
 require('lspconfig')['lua_ls'].setup {
     capabilities = capabilities

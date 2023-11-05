@@ -29,8 +29,6 @@ keymap('n', '<C-d>', '<C-d>zz', nore)
 keymap('n', '<C-u>', '<C-u>zz', nore)
 
 -- Plugin mappings
--- Nvim Tree
-keymap('n', '<leader>t', '<cmd>NvimTreeToggle<cr>', nore)
 -- Barbar
 keymap('n', '<leader>bp', '<cmd>BufferPick<cr>', nore)
 keymap('n', '<leader>bb', '<cmd>BufferNext<cr>', nore)

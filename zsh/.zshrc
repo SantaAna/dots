@@ -30,8 +30,8 @@ export PATH="/home/patrick/.cargo/bin:$PATH"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="bira"
 
-export EDITOR='/usr/bin/nvim'
-export VISUAL='/usr/bin/nvim'
+export EDITOR='~/.nix-profile/bin/nvim'
+export VISUAL='~/.nix-profile/bin/nvim'
 
 #aliases
 
