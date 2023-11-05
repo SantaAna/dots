@@ -52,8 +52,8 @@ return require('packer').startup(function(use)
     -- use "xiyaowong/transparent.nvim"
     -- Searching through tmux sessions with telescope
     use "camgraff/telescope-tmux.nvim"
-    -- Ranger for nvim
-    use "kevinhwang91/rnvimr"
+    -- tree explorer
+    use "nvim-tree/nvim-tree.lua"
     -- Customize paired files and templates
     use "tpope/vim-projectionist"
     -- Color theme

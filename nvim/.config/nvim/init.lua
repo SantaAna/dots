@@ -33,3 +33,5 @@ keymap('n', '<C-u>', '<C-u>zz', nore)
 keymap('n', '<leader>bp', '<cmd>BufferPick<cr>', nore)
 keymap('n', '<leader>bb', '<cmd>BufferNext<cr>', nore)
 keymap('n', '<leader>bx', '<cmd>bd<cr>', nore)
+-- NvimTree
+keymap('n', '<leader>t', '<cmd>NvimTreeToggle<cr>', nore)
