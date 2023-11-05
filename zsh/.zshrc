@@ -105,3 +105,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[ -f "/Users/patrickstruthers/.ghcup/env" ] && source "/Users/patrickstruthers/.ghcup/env" # ghcup-env
+
+# opam configuration
+[[ ! -r /Users/patrickstruthers/.opam/opam-init/init.zsh ]] || source /Users/patrickstruthers/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
