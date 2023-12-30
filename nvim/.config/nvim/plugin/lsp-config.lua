@@ -51,6 +51,9 @@ require 'lspconfig'.lua_ls.setup {
             workspace = {
                 -- Make the server aware of Neovim runtime files
                 library = vim.api.nvim_get_runtime_file("", true),
+                -- Disbale prompts at startup relating to workspace. 
+                -- May need to change if making extensive use of Lua in the future.
+                checkThirdParty = false,
             },
             -- Do not send telemetry data containing a randomized but unique identifier
             telemetry = {
@@ -66,6 +69,11 @@ require 'lspconfig'.elixirls.setup {
 }
 
 require 'lspconfig'.marksman.setup {
+    on_attach = on_attach,
+    capabilities = capabilities
+}
+
+require 'lspconfig'.ocamllsp.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }

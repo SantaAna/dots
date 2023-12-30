@@ -1,6 +1,7 @@
 -- global settings and options
 vim.g.mapleader = ' '
 vim.o.relativenumber = true
+vim.o.number = true
 vim.o.scrolloff = 10
 
 
