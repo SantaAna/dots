@@ -5,6 +5,15 @@ return require('packer').startup(function(use)
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
 	use 'neovim/nvim-lspconfig'
+    use "preservim/nerdtree"
+  use({
+    "stevearc/oil.nvim",
+    config = function()
+      require("oil").setup()
+    end,
+  })
+    -- Rust
+    use "mrcjkb/rustaceanvim"
     -- Treesitter
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     -- Icons for LSP suggestions

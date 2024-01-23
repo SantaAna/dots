@@ -104,25 +104,10 @@ _G.packer_plugins = {
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "/home/patrick/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
-  },
   fd = {
     loaded = true,
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/fd",
     url = "https://github.com/sharkdp/fd"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/home/patrick/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["lsp-colors.nvim"] = {
-    loaded = true,
-    path = "/home/patrick/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
-    url = "https://github.com/folke/lsp-colors.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -143,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  nerdtree = {
+    loaded = true,
+    path = "/home/patrick/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/preservim/nerdtree"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -174,6 +164,12 @@ _G.packer_plugins = {
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["oil.nvim"] = {
+    config = { "\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0" },
+    loaded = true,
+    path = "/home/patrick/.local/share/nvim/site/pack/packer/start/oil.nvim",
+    url = "https://github.com/stevearc/oil.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -194,6 +190,11 @@ _G.packer_plugins = {
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/rnvimr",
     url = "https://github.com/kevinhwang91/rnvimr"
   },
+  rustaceanvim = {
+    loaded = true,
+    path = "/home/patrick/.local/share/nvim/site/pack/packer/start/rustaceanvim",
+    url = "https://github.com/mrcjkb/rustaceanvim"
+  },
   ["telescope-tmux.nvim"] = {
     loaded = true,
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/telescope-tmux.nvim",
@@ -213,11 +214,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
-  },
-  ["transparent.nvim"] = {
-    loaded = true,
-    path = "/home/patrick/.local/share/nvim/site/pack/packer/start/transparent.nvim",
-    url = "https://github.com/xiyaowong/transparent.nvim"
   },
   ["trouble.nvim"] = {
     loaded = true,
@@ -258,15 +254,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/patrick/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
-  },
-  vimwiki = {
-    loaded = true,
-    path = "/home/patrick/.local/share/nvim/site/pack/packer/start/vimwiki",
-    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: oil.nvim
+time([[Config for oil.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
+time([[Config for oil.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

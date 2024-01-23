@@ -63,6 +63,11 @@ require 'lspconfig'.lua_ls.setup {
     },
 }
 
+require 'lspconfig'.rust_analyzer.setup {
+    on_attach = on_attach,
+    capabilities = capabilities
+}
+
 require 'lspconfig'.elixirls.setup {
     on_attach = on_attach,
     capabilities = capabilities
@@ -82,7 +87,6 @@ require 'lspconfig'.emmet_ls.setup {
     capabilities = capabilities,
     filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', "eelixir", "heex", "elixir"}
 }
-
 
 require 'lspconfig'.tailwindcss.setup {
   capabilities = capabilities,

@@ -2,8 +2,12 @@
 vim.g.mapleader = ' '
 vim.o.relativenumber = true
 vim.o.number = true
-vim.o.scrolloff = 10
+vim.o.scrolloff = 20
 
+--fold
+vim.opt.foldlevel = 20
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Tab settings
 vim.opt.expandtab = true
@@ -32,5 +36,10 @@ keymap('n', '<C-u>', '<C-u>zz', nore)
 -- Plugin mappings
 -- Barbar
 keymap('n', '<leader>bp', '<cmd>BufferPick<cr>', nore)
-keymap('n', '<leader>bb', '<cmd>BufferNext<cr>', nore)
-keymap('n', '<leader>bx', '<cmd>bd<cr>', nore)
+keymap('n', '<leader>bx', '<cmd>BufferDelete<cr>', nore)
+keymap('n', '<Tab>', '<cmd>BufferNext<cr>', nore)
+keymap('n', '<S-Tab>', '<cmd>BufferPrevious<cr>', nore)
+-- NerdTree
+keymap('n', '<leader>t', '<cmd>NERDTreeToggle<cr>', nore)
+-- Oil
+keymap('n', '-', '<cmd>Oil<cr>', nore)
