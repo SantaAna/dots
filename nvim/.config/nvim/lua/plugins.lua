@@ -5,13 +5,21 @@ return require('packer').startup(function(use)
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
 	use 'neovim/nvim-lspconfig'
-    use "preservim/nerdtree"
-  use({
+    use "nvim-tree/nvim-tree.lua"
+    use({
     "stevearc/oil.nvim",
     config = function()
       require("oil").setup()
     end,
-  })
+    })
+    use({
+      "jackMort/ChatGPT.nvim",
+        requires = {
+          "MunifTanjim/nui.nvim",
+          "nvim-lua/plenary.nvim",
+          "nvim-telescope/telescope.nvim"
+        }
+    })
     -- Rust
     use "mrcjkb/rustaceanvim"
     -- Treesitter

@@ -40,6 +40,8 @@ keymap('n', '<leader>bx', '<cmd>BufferDelete<cr>', nore)
 keymap('n', '<Tab>', '<cmd>BufferNext<cr>', nore)
 keymap('n', '<S-Tab>', '<cmd>BufferPrevious<cr>', nore)
 -- NerdTree
-keymap('n', '<leader>t', '<cmd>NERDTreeToggle<cr>', nore)
+keymap('n', '<leader>t', '<cmd>NvimTreeToggle<cr>', nore)
 -- Oil
 keymap('n', '-', '<cmd>Oil<cr>', nore)
+-- ChatGPT
+keymap('n', '<leader>c', '<cmd>ChatGPT<cr>', nore)
