@@ -12,7 +12,7 @@ export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/Users/patrickstruthers/.local/share/elixir-ls:$PATH"
 export PATH="/Users/patrickstruthers/Library/Python/3.9/bin:$PATH"
 export PATH="/home/patrick/.local/lib/python3.10/site-packages:$PATH"
-export PATH="/home/patrick/.asdf/installs/elixir/1.14.4-otp-25/.mix/escripts:$PATH"
+export PATH="/home/patrick/.asdf/installs/elixir/1.16.1-otp-26/.mix/escripts:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="/home/patrick/go/bin:$PATH"
 export ELIXIR_ERL_OPTIONS="+sssdio 128"
@@ -24,6 +24,7 @@ export FZF_BASE="/opt/homebrew/bin/fzf"
 export FLYCTL_INSTALL="/home/patrick/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/home/patrick/.cargo/bin:$PATH"
+export PATH="$PATH:/opt/nvim-linux64/bin"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
