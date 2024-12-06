@@ -1,4 +1,4 @@
-local ls = require("luasnip")
+local ls = require("plugins.lsp")
 return {
   "L3MON4D3/LuaSnip",
   keys = function()
