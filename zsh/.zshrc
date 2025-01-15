@@ -7,6 +7,9 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/cuda-12.6/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.6/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export CUDA_HOME=/usr/local/cuda-12.6
 export PATH=/Users/patrickstruthers/.mix/escripts:$PATH
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/Users/patrickstruthers/.local/share/elixir-ls:$PATH"
@@ -16,7 +19,7 @@ export PATH="/home/patrick/.asdf/installs/elixir/1.16.1-otp-26/.mix/escripts:$PA
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="/home/patrick/go/bin:$PATH"
 export ELIXIR_ERL_OPTIONS="+sssdio 128"
-export XLA_TARGET="cuda114"
+export XLA_TARGET="cpu"
 export LC_ALL="en_US.UTF-8"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
