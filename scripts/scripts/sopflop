@@ -1,0 +1,13 @@
+#!/bin/bash
+
+IFS="." read filename encstatus ext <<<"${1}"
+
+if [ "$encstatus" = "dec" ]; then
+  sops --encrypt "${1}" >"${filename}.enc.${ext}"
+  rm "${1}"
+elif [ "$encstatus" = "enc" ]; then
+  sops -d "${1}" >"${filename}.dec.${ext}"
+  rm "${1}"
+else
+  echo "file must be in format name.[dec | enc].extension, dec if plaintext enc if encrypted"
+fi

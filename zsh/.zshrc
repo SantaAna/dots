@@ -28,6 +28,7 @@ export FLYCTL_INSTALL="/home/patrick/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/home/patrick/.cargo/bin:$PATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export AGE_PUB="age1e3wggd2kg7rnh8lyxccf5qtjkl77fper3el39ycsszcl9jp4lelqax0cl5"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -40,7 +41,7 @@ export VISUAL='~/.nix-profile/bin/nvim'
 #aliases
 
 alias cpbooks="~/scripts/copy_books"
-
+alias sopflop="~/scripts/sopflop"
 #rebinds control key on laptop
 
 if [ "$(hostname)" = "pop-laptop" ]; then
