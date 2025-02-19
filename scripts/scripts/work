@@ -1,0 +1,17 @@
+#!/bin/bash
+
+tmux new -s work -d
+tmux rename-window -t work vim
+tmux send-keys -t work 'nvim ./' C-m
+tmux split-window -v -t work
+tmux send-keys -t work 'iex -S mix' C-m
+tmux resize-pane -D 7
+
+tmux new-window -t work
+tmux rename-window -t work notes
+tmux send-keys -t notes "cd ~/Documents/personal_notes/" C-m
+tmux send-keys -t notes "nvim ./" C-m
+
+tmux select-window -t work:0
+tmux select-pane -t work:0.0
+tmux attach -t work
