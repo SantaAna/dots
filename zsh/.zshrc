@@ -42,11 +42,14 @@ export VISUAL='~/.nix-profile/bin/nvim'
 
 alias cpbooks="~/scripts/copy_books"
 alias sopflop="~/scripts/sopflop"
+alias work="~/scripts/work"
 #rebinds control key on laptop
 
 if [ "$(hostname)" = "pop-laptop" ]; then
     setxkbmap -option ctrl:swapcaps
 fi
+
+ZVM_INIT_MODE=sourcing
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,7 +113,9 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git fzf zsh-autosuggestions asdf vi-mode)
  
+source ~/dots/secret.dec.env
 source $ZSH/oh-my-zsh.sh
+source <(fzf --zsh)
 
 #plugin configur using zplug
 #documentation: https://github.com/zplug/zplug
