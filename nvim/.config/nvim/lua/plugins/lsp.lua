@@ -4,7 +4,14 @@ return {
     ---@class PluginLspOpts
     opts = {
       servers = {
-        elixirls = {},
+        elixirls = {
+          settings = {
+            elixirLS = {
+              dialyzerEnabled = false,
+              fetchdeps = false,
+            },
+          },
+        },
         marksman = {},
       },
     },
