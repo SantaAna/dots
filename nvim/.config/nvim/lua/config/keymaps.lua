@@ -4,7 +4,6 @@
 --
 local keymap = vim.api.nvim_set_keymap
 local nore = { noremap = true }
-
 keymap("i", "<C-e>", "<ESC>", nore)
 keymap("i", "jj", "<ESC>", nore)
 -- Vim projectionist.
