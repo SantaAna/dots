@@ -26,15 +26,6 @@ return {
     ---@class PluginLspOpts
     opts = {
       servers = {
-        elixirls = {},
-      },
-    },
-  },
-  {
-    "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
-    opts = {
-      servers = {
         gopls = {},
       },
     },
