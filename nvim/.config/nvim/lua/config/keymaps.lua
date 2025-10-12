@@ -12,5 +12,8 @@ keymap("i", "jj", "<ESC>", nore)
 keymap("n", "<leader>a", "<cmd>A<cr>", nore)
 keymap("n", "<leader>av", "<cmd>AV<cr>", nore)
 keymap("n", "<leader>as", "<cmd>AS<cr>", nore)
+
+-- fugitive bindings, loaded here b/c they cause issues
+-- when lazy loaded like projectionist
 keymap("n", "<leader>gv", "<cmd>Git<cr>", nore)
 keymap("n", "<leader>gd", "<cmd>Gdiffsplit<cr>", nore)
