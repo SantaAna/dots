@@ -1,12 +1,12 @@
 return {
-  -- add dracula
-  { "Mofiqul/dracula.nvim" },
-
-  -- Configure LazyVim to load dracula
   {
-    "LazyVim/LazyVim",
+    "folke/tokyonight.nvim",
     opts = {
-      colorscheme = "dracula",
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent"
+      }
     },
   },
 }
