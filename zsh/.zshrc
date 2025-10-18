@@ -129,6 +129,7 @@ zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/asdf", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "jeffreytse/zsh-vi-mode"
+zplug romkatv/powerlevel10k, as:theme, depth:1
 
 zplug load 
 # User configuration
