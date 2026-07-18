@@ -19,6 +19,7 @@ return {
   },
   config = function()
     require("obsidian").setup({
+      disable_frontmatter = true,
       workspaces = {
         {
           name = "stelth",
