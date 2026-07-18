@@ -15,7 +15,6 @@ export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/Users/patrickstruthers/.local/share/elixir-ls:$PATH"
 export PATH="/Users/patrickstruthers/Library/Python/3.9/bin:$PATH"
 export PATH="/home/patrick/.local/lib/python3.10/site-packages:$PATH"
-# export PATH="/home/patrick/.asdf/installs/elixir/1.16.1-otp-26/.mix/escripts:$PATH"
 export PATH="/home/patrick/.mix/escripts:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="/home/patrick/go/bin:$PATH"
@@ -30,14 +29,19 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/home/patrick/.cargo/bin:$PATH"
 export PATH="$PATH:/usr/share/nvim/nvim-linux-x86_64/bin"
 export AGE_PUB="age1e3wggd2kg7rnh8lyxccf5qtjkl77fper3el39ycsszcl9jp4lelqax0cl5"
+export SOPS_AGE_KEY_FILE="$HOME/.age/key.txt"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="bira"
+#
+for v in $(sops decrypt ~/.secret_env.enc); do
+  export $v
+done
 
-export EDITOR=/usr/share/nvim/nvim-linux86_64/bin/nvim
-export VISUAL=/usr/share/nvim/nvim-linux86_64/bin/nvim
+export EDITOR=/usr/share/nvim/nvim-linux-x86_64/bin/nvim
+export VISUAL=/usr/share/nvim/nvim-linux-x86_64/bin/nvim
 
 
 #aliases
@@ -115,7 +119,6 @@ ZVM_INIT_MODE=sourcing
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git fzf zsh-autosuggestions asdf vi-mode)
  
-source ~/dots/secret.dec.env
 source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 
