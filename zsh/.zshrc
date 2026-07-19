@@ -115,7 +115,6 @@ ZVM_INIT_MODE=sourcing
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git fzf zsh-autosuggestions asdf vi-mode)
  
-source ~/dots/secret.dec.env
 source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 
