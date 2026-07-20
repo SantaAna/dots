@@ -35,6 +35,9 @@ export AGE_PUB="age1e3wggd2kg7rnh8lyxccf5qtjkl77fper3el39ycsszcl9jp4lelqax0cl5"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="bira"
+#
+
+export ZSH_THEME=bira
 
 export EDITOR=/usr/share/nvim/nvim-linux86_64/bin/nvim
 export VISUAL=/usr/share/nvim/nvim-linux86_64/bin/nvim
